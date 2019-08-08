@@ -11,3 +11,39 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+h1, h2, h3, h4{
+  color:$gray !important;
+}
+
+
+
+a {
+  color: #1EDD88;
+  text-decoration: none;
+
+  &:hover {
+  color: #1edd7e;
+  text-decoration: none;
+  }
+}
+
+.container {
+  padding:40px 0px;
+}
+
+.btn {
+  background:$main-color;
+  border:0px;
+  color:white;
+  border-radius: 30px;
+  padding: 8px 20px;
+
+  &:hover {
+    background: $main-color-hover;
+    border:0px;
+    color:white;
+  }
+}
+

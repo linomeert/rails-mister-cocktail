@@ -1,0 +1,22 @@
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+  <h2><%= @cocktail.name %> Ingredients</h2>
+  <div class="cards">
+  <% @doses.each do |dose| %>
+    <div class="flash flash-success alert-dismissible fade show" role="alert">
+      <p><%= dose.description %> - <span><%= dose.ingredient.name %></span></p>
+      <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }  do %>
+        <i class="fas fa-times"></i>
+      <% end %>
+    </div>
+
+  <% end %>
+
+
+
+   </div>
+  <%= link_to "Add new ingredient", new_cocktail_dose_path(@cocktail), class: "btn mt-3" %><br>
+</div>
+
+
+

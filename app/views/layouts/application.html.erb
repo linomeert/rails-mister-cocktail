@@ -11,6 +11,28 @@
   </head>
 
   <body>
+
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <a class="navbar-brand" href="#">
+        <h2 class="logo">Le Cocktail</h2>
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <%= link_to "Discover our cocktails", cocktails_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Add a new cocktail", new_cocktail_path, class: "nav-link colored" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <%= yield %>
 
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->

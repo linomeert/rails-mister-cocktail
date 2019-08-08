@@ -1,0 +1,18 @@
+
+<div class="container" id="content">
+  <h1>All cocktails</h1>
+
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail), :class => "card-category", :style => "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)" do %>
+
+          <h3><%= cocktail.name %></h3>
+
+      <% end %>
+    <% end %>
+  </div>
+
+</div>
+
+
+
